@@ -18,8 +18,8 @@ var CognitoUser = AmazonCognitoIdentity.CognitoUser;
 var AuthenticationDetails = AmazonCognitoIdentity.AuthenticationDetails;
 
 var poolData = {
-	UserPoolId : 'eu-west-3_5QRTo1d8x', // Your user pool id here
-	ClientId : '6j18jgjcmnlb5s0qnph8vr9q4r' // Your client id here
+	UserPoolId : 'xxxxxxxxxxxxxxxxxxx', // Your user pool id here
+	ClientId : 'xxxxxxxxxxxxxxxxxx' // Your client id here
 };
 
 //add events to those 2 buttons

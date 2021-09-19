@@ -1,7 +1,7 @@
 
 # flask-audio-to-text-app 
 
-This application allows the user to record an audio and recieve an email with the transcribed text 
+This application allows the user to record an audio and recieve an email with the transcribed text (hosted on AWS)
 
 
 Architecture diagram : 

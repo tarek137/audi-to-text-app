@@ -26,8 +26,7 @@ Important to know :
   1) npm install request jwk-top-pem
   2) node index.js (file available in /pem , update the cognito url inside)
  
- - you need to set up a MySQL database , you can keep the same column names (user_id /username /user_email/date) or change , in this case do not forget to update the sql queries 
- this link can be helpful to configure the database : https://medium.com/aws-pocket/aws-rds-with-mysql-using-flask-f1c6d8cc7eff
+ - you need to set up a MySQL database , you can keep the same column names (user_id /username /user_email/date) or change , in this case do not forget to update the sql queries in the code , this link can be helpful to configure the database : https://medium.com/aws-pocket/aws-rds-with-mysql-using-flask-f1c6d8cc7eff
 - For audio recording I used the matt diamond javascript recorder : https://github.com/mattdiamond/Recorderjs
-- Do not forget to give you lambdas the right permissions (first lmabda : S3 read and Transcribe , second lambda : S3 read and write adn SES ) , adding cloudwatch permissions can be very useful for debugging and monitoring of lambda transactions
+- Do not forget to give your lambdas the right permissions (first lmabda : S3 read + Transcribe , second lambda : S3 read and write + SES ) , adding cloudwatch permissions can be very useful for debugging and monitoring of lambda transactions
 - you can run this code locally or in an EC2 instance , in this case it would be better to add a ngnix and uwsgi layer to handle several requests , this link explains how to configure it very well : https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
